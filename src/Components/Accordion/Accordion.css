@@ -1,0 +1,71 @@
+.accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
+  
+  .accordion-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-question:hover {
+    background-color: #e3f2fd; /* Light blue hover effect */
+  }
+  
+  .accordion-question h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .accordion-question span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-question span.rotate {
+    transform: rotate(45deg); /* Rotates "+" to an "x" */
+  }
+  
+  .accordion-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background-color: #fff;
+    color: #555;
+    font-size: 0.9rem;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  }
+  
+  .accordion-answer.open {
+    max-height: 150px; /* Adjust based on content */
+    padding: 15px 20px;
+  }
+  
+  .accordion-answer h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  
